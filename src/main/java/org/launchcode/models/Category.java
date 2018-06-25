@@ -40,5 +40,4 @@ public class Category {
     @JoinColumn(name = "category_id")
     private List<Cheese> cheeses = new ArrayList<>();
 
-
 }

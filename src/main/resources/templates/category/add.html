@@ -5,11 +5,12 @@
 <h1 th:text="${title}">Default Title</h1>
 
 <nav th:replace="fragments :: navigation"></nav>
-
+<!-- cat stepped on the keyboard and spelled: "SASSSSSSSSSSSSSSSQ"  think he was going for "sasquatch" -->
+<!-- try to keep cat away from laptop -->
 <!-- model binding! use th:object="${category}" with these attributes: th:for, th:field, th:errors-->
 <form method="post" style="max-width:600px;" th:object="${category}">
     <div class="form-group">
-        <label th:for="name">Category Name</label>
+        <label th:for="type">Category Name</label>
         <input class="form-control" th:field="*{name}" />
         <span th:errors="*{name}" class="error"></span>
     </div>
